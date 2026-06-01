@@ -1,36 +1,32 @@
-name: CI/CD Pipeline
+name: CI Pipeline
 
 on:
-push:
-branches:
-- main
+  push:
+    branches:
+      - main
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
 
-build:
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-runs-on: ubuntu-latest
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements-prod.txt
 
-steps:
+      - name: Verify Imports
+        run: |
+          python -c "import fastapi, pandas, sklearn, xgboost"
 
-  - name: Checkout Code
-    uses: actions/checkout@v4
-
-  - name: Setup Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: 3.11
-
-  - name: Install Dependencies
-    run: |
-      pip install -r requirements-prod.txt
-
-  - name: Verify Imports
-    run: |
-      python -c "import fastapi, pandas, sklearn, xgboost"
-
-  - name: Docker Build Test
-    run: |
-      docker build -t credit-risk-api .
+      - name: Docker Build Test
+        run: |
+          docker build -t credit-risk-api .
 
