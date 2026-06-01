@@ -1,0 +1,56 @@
+data:
+  raw_data_path: data/01-raw/credit_card.csv
+  test_size: 0.2
+
+artifacts:
+  train_data_path: artifacts/train.csv
+  test_data_path: artifacts/test.csv
+  train_processed_path: artifacts/train_processed.csv
+  test_processed_path: artifacts/test_processed.csv
+  model_path: artifacts/model.pkl
+  encoder_path: artifacts/encoder.pkl
+  metrics_path: artifacts/metrics.json
+
+training:
+  random_state: 42
+
+  # XGBoost Config
+  objective: multi:softprob
+  eval_metric: mlogloss
+
+  n_estimators: 500
+  max_depth: 5
+  learning_rate: 0.03
+  subsample: 0.8
+  colsample_bytree: 0.8
+
+  gamma: 1
+  reg_alpha: 0.5
+  reg_lambda: 1
+  min_child_weight: 1
+
+  early_stopping_rounds: 50
+
+  # Classification → no log transform
+  log_target: false
+
+threshold_tuning:
+  enable: true
+  target_class: 2
+  metric: f1
+
+  threshold_range:
+    start: 0.15
+    end: 0.75
+    step: 0.025
+
+  default_threshold: 0.25
+
+mlflow:
+  experiment_name: Credit_card_risk_modeling
+  registered_model_name: Creditcardriskmodeling
+
+target_column: Approved_Flag
+
+
+ 

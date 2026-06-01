@@ -1,0 +1,8 @@
+shani67/
+__pycache__/
+.git/
+.ipynb_checkpoints/
+mlruns/
+notebooks/
+notebooks2/
+logs/

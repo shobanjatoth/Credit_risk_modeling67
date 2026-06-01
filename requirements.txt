@@ -1,0 +1,19 @@
+numpy
+pandas
+scikit-learn
+pytest
+seaborn
+matplotlib
+xgboost
+lightgbm
+catboost
+joblib 
+fastapi 
+uvicorn 
+pydantic
+ pytest 
+ mlflow 
+ pyyaml
+ setuptools
+dotenv
+#   -e.
