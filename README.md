@@ -172,13 +172,15 @@ Insert your evaluation metrics screenshot here.
 
 ### Key Metrics
 
-| Metric    | Score  |
-| --------- | ------ |
-| Accuracy  | XX.XX% |
-| Precision | XX.XX% |
-| Recall    | XX.XX% |
-| F1 Score  | XX.XX% |
-| ROC-AUC   | XX.XX  |
+|       Class      |  Precision |     Recall |   F1-Score |    Support |
+| :--------------: | ---------: | ---------: | ---------: | ---------: |
+|         0        |     0.7356 |     0.8872 |     0.8043 |      1,135 |
+|         1        |     0.8938 |     0.8389 |     0.8655 |      6,373 |
+|         2        |     0.4456 |     0.4316 |     0.4385 |      1,536 |
+|         3        |     0.7142 |     0.8350 |     0.7699 |      1,218 |
+|   **Macro Avg**  | **0.6973** | **0.7482** | **0.7195** | **10,262** |
+| **Weighted Avg** | **0.7879** | **0.7828** | **0.7834** | **10,262** |
+
 
 ---
 
