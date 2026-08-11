@@ -72,31 +72,25 @@ CI/CD using GitHub Actions
 ## 🛠️ Tech Stack
 
 ### Programming Language
-
 * Python
 
 ### Machine Learning
-
 * XGBoost
 * Scikit-Learn
 * Pandas
 * NumPy
 
 ### Experiment Tracking
-
 * MLflow
 
 ### API Development
-
 * FastAPI
 * Uvicorn
 
 ### Frontend
-
 * Streamlit
 
 ### DevOps & MLOps
-
 * Docker
 * GitHub Actions
 * Pytest
@@ -131,21 +125,18 @@ Credit-Risk-Modelling/
 ## ⚙️ Features
 
 ### Data Processing
-
 * Missing value handling
 * Outlier treatment
 * Feature encoding
 * Feature scaling
 
 ### Model Development
-
 * XGBoost classifier
 * Hyperparameter tuning
 * Cross-validation
 * Model evaluation
 
 ### MLOps
-
 * MLflow experiment tracking
 * Model version management
 * Automated unit testing
@@ -153,7 +144,6 @@ Credit-Risk-Modelling/
 * CI/CD pipeline
 
 ### Deployment
-
 * FastAPI prediction service
 * Streamlit business dashboard
 * REST API documentation
@@ -164,11 +154,7 @@ Credit-Risk-Modelling/
 
 ### Evaluation Metrics
 
-Insert your evaluation metrics screenshot here.
-
-```markdown
 ![Evaluation Metrics](images/evaluation_metrics.png)
-```
 
 ### Key Metrics
 
@@ -180,7 +166,6 @@ Insert your evaluation metrics screenshot here.
 |         3        |     0.7142 |     0.8350 |     0.7699 |      1,218 |
 |   **Macro Avg**  | **0.6973** | **0.7482** | **0.7195** | **10,262** |
 | **Weighted Avg** | **0.7879** | **0.7828** | **0.7834** | **10,262** |
-
 
 ---
 
@@ -194,22 +179,13 @@ MLflow was used for:
 * Model versioning
 
 ### MLflow Dashboard
-
-```markdown
 ![MLflow Experiments](images/mlflow_experiments.png)
-```
 
 ### Logged Parameters
-
-```markdown
 ![MLflow Parameters](images/mlflow_parameters.png)
-```
 
 ### Registered Models
-
-```markdown
 ![MLflow Models](images/mlflow_models.png)
-```
 
 ---
 
@@ -218,10 +194,7 @@ MLflow was used for:
 The trained model is exposed through FastAPI endpoints.
 
 ### API Documentation
-
-```markdown
 ![FastAPI Docs](images/fastapi_docs.png)
-```
 
 ### Prediction Endpoint
 
@@ -255,13 +228,9 @@ POST /predict
 A business-friendly dashboard was developed using Streamlit for real-time predictions.
 
 ### User Interface
-
-```markdown
 ![Streamlit UI](images/streamlit_ui.png)
-```
 
 ### Dashboard Features
-
 * Easy data input
 * Real-time predictions
 * Risk categorization
@@ -297,10 +266,7 @@ GitHub Actions automates:
 * Deployment workflow
 
 ### Workflow
-
-```markdown
 ![GitHub Actions](images/github_actions.png)
-```
 
 ---
 
@@ -360,7 +326,7 @@ streamlit run app.py
 
 ---
 
-##  Future Improvements
+## 🔮 Future Improvements
 
 * Model monitoring and drift detection
 * Cloud deployment (AWS/Azure/GCP)
@@ -390,7 +356,7 @@ Skills:
 
 ---
 
-##  Key Takeaways
+## 🏁 Key Takeaways
 
 This project demonstrates:
 
@@ -403,4 +369,3 @@ This project demonstrates:
 * CI/CD Automation with GitHub Actions
 
 A complete industry-level implementation of Credit Risk Modeling from development to deployment.
-
