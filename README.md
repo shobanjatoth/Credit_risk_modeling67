@@ -182,7 +182,8 @@ MLflow was used for:
 ![MLflow Experiments](images/mlflow_experiments.png)
 
 ### Logged Parameters
-![MLflow Parameters](images/mlflow_parameters.png)
+![MLflow Parameters](<img width="877" height="352" alt="Screenshot 2026-06-18 150108" src="https://github.com/user-attachments/assets/2dba355e-1588-456a-a1e2-c02fe24f0862" />
+/mlflow_parameters.png)
 
 ### Registered Models
 ![MLflow Models](images/mlflow_models.png)
