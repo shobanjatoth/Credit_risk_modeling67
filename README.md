@@ -186,7 +186,8 @@ MLflow was used for:
 /mlflow_parameters.png)
 
 ### Registered Models
-![MLflow Models](images/mlflow_models.png)
+![MLflow Models](<img width="1007" height="218" alt="Screenshot 2026-06-18 150222" src="https://github.com/user-attachments/assets/456916e3-ef0b-416f-bb3c-76273567144e" />
+)
 
 ---
 
